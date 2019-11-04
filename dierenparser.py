@@ -32,9 +32,13 @@ def parse_text(str):
 
 
 if __name__ == '__main__':
-    dieren = []
+    dieren = []                                                     
     with open('dieren.txt', 'r') as f:
         dieren = parse_text(f.read())
     
     for dier in dieren:
         dier.print()
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()   
